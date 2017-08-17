@@ -33,7 +33,7 @@ public class Method_02_Test {
         }
         @Override
         public String format() {
-        	return "Dao"+IDao.super.format();
+        	return "DaoA"+IDao.super.format();
         }
 
     }
@@ -46,6 +46,6 @@ public class Method_02_Test {
 
         String result = daoA.format();
 
-        "DaoA[20 persons]".equals(result);
+        assert "DaoA[20 persons]".equals(result);
     }
 }
